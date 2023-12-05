@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Kalkulator Matematika Segitiga</h1>
+            <p>Hitung Luas dan Keliling Segitiga Dengan Mudah!</p>
+            <p>Assignment Mini-Project <b>RevoU Fundamental Course</b></p>
+            <img src="images/segitiga.png" alt="" width="250px">
+        </header>
+
+        <div class="calculator">
+            <div class="nav-links">
+                <a href="#" onclick="showPage('luasPage')">Hitung Luas</a>
+                <a href="#" onclick="showPage('kelilingPage')">Hitung Keliling</a>
+            </div>
+
+            <!-- Luas Calculation Page -->
+            <div id="luasPage" class="calculation-page">
+                <h2>Hitung Luas Segitiga</h2>
+                <form id="luasForm">
+                    <label for="luasBase">Alas:</label>
+                    <input type="number" id="luasBase" required>
+
+                    <label for="luasHeight">Tinggi:</label>
+                    <input type="number" id="luasHeight" required>
+
+                    <button type="button" onclick="calculateLuas()">Hitung Luas</button>
+                    <button type="button" onclick="resetLuas()">Reset</button>
+                    <div id="luasResult"></div>
+                </form>
+            </div>
+
+            <!-- Keliling Calculation Page -->
+            <div id="kelilingPage" class="calculation-page">
+                <h2>Hitung Keliling Segitiga</h2>
+                <form id="kelilingForm">
+                    <label for="kelilingSideA">Sisi A:</label>
+                    <input type="number" id="kelilingSideA" required>
+
+                    <label for="kelilingSideB">Sisi B:</label>
+                    <input type="number" id="kelilingSideB" required>
+
+                    <label for="kelilingSideC">Sisi C:</label>
+                    <input type="number" id="kelilingSideC" required>
+
+                    <button type="button" onclick="calculateKeliling()">Hitung Keliling</button>
+                    <button type="button" onclick="resetKeliling()">Reset</button>
+                    <div id="kelilingResult"></div>
+                </form>
+            </div>
+        </div>
+
+        <hr>
+
+        <aside>
+            <article class="biodata kotak">
+            <header>
+                <h1>Profil</h1>
+                <figure>
+                    <img src="images/foto.jpg" width="150px">
+                </figure>
+            </header>
+      
+            <div>
+                <h3>Biodata</h3>
+                <table>
+                    <tr>
+                        <th>Nama : </th>
+                        <td>Muhammad Ihsan</td>
+                    </tr>
+                    <tr>
+                        <th>Umur : </th>
+                        <td>21 tahun</td>
+                    </tr>
+                    <tr>
+                        <th>Asal : </th>
+                        <td>Kota Cimahi</td>
+                    </tr>
+                </table>
+            </div>
+            </article>
+        </aside>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
